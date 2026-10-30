@@ -6,7 +6,7 @@ default_config_ini="$config_dir/config.ini"
 config_ini="$default_config_ini"  # Will be overridden if -c is specified
 BPMN_DIR="$( cd "$(dirname "$SCRIPT_DIR")/../orchestration/" ; pwd )"
 DEBUG=false
-TENANT="greenbank"  # Default tenant TODO does this actually do anything 
+TENANT="greenbank"  # Default tenant identifier for multi-tenant Zeebe deployment (e.g. greenbank, bluebank) 
 
 deploy() {
     local file="$1"
